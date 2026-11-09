@@ -1,0 +1,114 @@
+/* Style Dasar & Warna */
+:root {
+  --maroon-primary: #800000;
+  --maroon-hover: #5a0000;
+  --navy-secondary: #0A192F;
+  --navy-light: #1E3A8A;
+}
+
+.bg-maroon { background-color: var(--maroon-primary) !important; }
+.bg-navy { background-color: var(--navy-secondary) !important; }
+.text-maroon { color: var(--maroon-primary) !important; }
+.text-navy { color: var(--navy-secondary) !important; }
+
+/* Navbar Clean Styling */
+.custom-navbar {
+  background-color: var(--navy-secondary) !important;
+  border-bottom: 2px solid var(--maroon-primary);
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.custom-navbar .navbar-brand {
+  font-weight: 700;
+  color: #ffffff !important;
+  letter-spacing: 0.5px;
+}
+
+.custom-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.75) !important;
+  font-weight: 500;
+  padding: 8px 16px !important;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+/* Hover & Active State (Indikator Merah Marun di Bawah Teks) */
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+  color: #ffffff !important;
+  border-bottom: 2px solid var(--maroon-primary) !important;
+  background-color: transparent !important;
+}
+
+/* Tombol Custom */
+.btn-maroon {
+  background-color: var(--maroon-primary) !important;
+  color: #ffffff !important;
+  border: none;
+}
+
+.btn-maroon:hover {
+  background-color: var(--maroon-hover) !important;
+  color: #ffffff !important;
+}
+
+.btn-navy {
+  background-color: var(--navy-secondary) !important;
+  color: #ffffff !important;
+  border: none;
+}
+
+.btn-navy:hover {
+  background-color: var(--navy-light) !important;
+  color: #ffffff !important;
+}
+
+/* Hero Section Fix */
+.hero-section {
+  background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(128, 0, 0, 0.7)), 
+              url('../img/program-outbound-batu-malang.webp') center/cover no-repeat;
+  padding: 120px 0 100px 0;
+  color: #ffffff;
+}
+
+/* Floating Action Buttons */
+.floating-btn-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.float-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  text-decoration: none;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.btn-wa-float {
+  background-color: #25D366;
+  color: #ffffff !important;
+}
+
+.btn-top-float {
+  background-color: var(--navy-secondary);
+  color: #ffffff !important;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.btn-top-float.show {
+  opacity: 1;
+  visibility: visible;
+}
